@@ -3,18 +3,18 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .portfolio {
-    padding-top: 30px;
+    margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio {
-    padding-top: 50px;
+    margin-top: 50px;
   }
 }
 
@@ -36,6 +36,13 @@ a {
 @media screen and (min-width: 1200px) {
   .portfolio__element {
     width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 }
 
@@ -85,6 +92,7 @@ a {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  flex-grow: 1;
 }
 
 .portfolio__title {
